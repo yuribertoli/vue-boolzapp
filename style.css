@@ -263,6 +263,18 @@ main {
     font-size: 0.6rem;
 }
 
+i.fa-angle-down {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    font-size: 0.7rem;
+    padding: 5px;
+}
+
+.messaggi div p:hover i.fa-angle-down{
+    display: block;
+}
     /* Invio */
 .invio {
     background-color: #f3eeea;
