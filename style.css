@@ -4,7 +4,23 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #0A4C95 #C2D2E4;
 }
+    /* Inizio Scrollbar Edge/Chrome */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track-piece  {
+    background-color: #C2D2E4;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 30px;
+    background-color: #0A4C95;
+}
+    /* Fine Scrollbar Edge/Chrome */
 
 #root {
     height: 100vh;
@@ -144,6 +160,7 @@ aside {
     /* Contatti */
 .contatti {
     overflow-y: auto;
+    padding-bottom: 5px;
 }
 
 .contatto {
@@ -233,11 +250,11 @@ main {
     overflow-y: auto;
 }
 
-.f-end {
+.sent {
     align-self: flex-end;
 }
 
-.f-start {
+.received {
     align-self: flex-start;
 }
 
@@ -254,11 +271,11 @@ main {
     position: relative;
 }
 
-.f-end p {
+.sent p {
     background-color: #d5f9ba;
 }
 
-.f-start p {
+.received p {
     background-color: white;
 }
 
