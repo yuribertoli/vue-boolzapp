@@ -179,7 +179,7 @@ main {
     display: inline-block;
     width: 70%;
     height: 100%;
-    background-color: blue;
+    background-color: white;
 }
 
     /* Info */
@@ -208,10 +208,40 @@ main {
     font-weight: 500;
     font-size: 1.1rem;
     margin-bottom: 10px;
+    padding-top: 5px;
 }
 
 .contact-details span {
     font-size: 0.8rem;
     color: #70787b;
     padding-left: 0;
+    font-weight: 100;
+}
+
+    /* Messaggi */
+.messaggi {
+    width: 98%;
+    height: calc(100% - 130px);
+    background-color: blue;
+}
+    /* Invio */
+.invio {
+    background-color: #f3eeea;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.invio i {
+    font-size: 1.5rem;
+    color: #6b7377;
+}
+
+.invio input {
+    height: 80%;
+    width: 85%;
+    padding-left: 10px;
+    border: none;
+    border-radius: 2px;
 }
