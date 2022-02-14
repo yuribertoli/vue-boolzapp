@@ -37,6 +37,10 @@
     font-size: 1.1rem;
 }
 
+a {
+    color: #578194;
+}
+
 /* Regole Aside */
 aside {
     display: inline-block;
@@ -46,6 +50,7 @@ aside {
     flex-direction: column;
 }
 
+    /* Nome Utente */
 .nome-utente {
     display: flex;
     justify-content: space-between;
@@ -73,6 +78,42 @@ aside {
 
 .icone i {
     padding: 0 10px;
+}
+
+    /* Notifiche */
+.notifiche {
+    display: flex;
+    align-items: center;
+    background-color: #8edafc;
+    padding: 10px;
+}
+
+.bell {
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.bell i {
+    line-height: 50px;
+    color: #8edafc;
+    font-size: 1.5rem;
+}
+
+.notifications-text {
+    width: calc(100% - 60px);
+    padding-left: 10px;
+}
+
+.notifications-text h3 {
+    font-size: 0.8rem;
+}
+
+.notifications-text a {
+    font-size: 0.75rem;
 }
 
 /* Regole Main */
