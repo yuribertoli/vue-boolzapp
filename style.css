@@ -142,6 +142,10 @@ aside {
 }
 
     /* Contatti */
+.contatti {
+    overflow-y: auto;
+}
+
 .contatto {
     background-color: white;
     display: flex;
@@ -172,7 +176,7 @@ aside {
     right: 10px;
     top: 0;
     color: #b6b9bb;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 /* Regole Main */
 main {
@@ -223,9 +227,10 @@ main {
     width: 98%;
     height: calc(100% - 130px);
     background-image: url(img/mine.jpg);
-    padding: 30px 60px 0;
+    padding: 30px 60px;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .f-end {
@@ -260,7 +265,6 @@ main {
 .messaggi span.last-message {
     top: 72.5%;
     right: 5px;
-    font-size: 0.6rem;
 }
 
 i.fa-angle-down {
@@ -270,11 +274,13 @@ i.fa-angle-down {
     right: 7px;
     font-size: 0.7rem;
     padding: 5px;
+    cursor: pointer;
 }
 
 .messaggi div p:hover i.fa-angle-down{
     display: block;
 }
+
     /* Invio */
 .invio {
     background-color: #f3eeea;

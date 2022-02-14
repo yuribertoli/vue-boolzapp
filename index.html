@@ -49,51 +49,23 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 
-                <div class="contatti">
+                <ul class="contatti">
 
-                    <div class="contatto">
+                    <li class="contatto" v-for="(contact, indice) in contacts">
 
                         <div class="avatar">
-                            <img class="icona-avatar" src="img/avatar_1.jpg" alt="avatar myself">
+                            <img class="icona-avatar" :src="'img/avatar' + contact.avatar + '.jpg' " :alt="avatar + 'contact.name' ">
                         </div>
     
                         <div class="text-contacts">
-                            <h3>Michele</h3>
+                            <h3>{{contact.name}}</h3>
                             <p>Tutto fatto</p>
                             <span class="last-message">10/01/2020 16:15:22</span>
                         </div>
 
-                    </div>
+                    </li>
 
-                    <div class="contatto">
-
-                        <div class="avatar">
-                            <img class="icona-avatar" src="img/avatar_1.jpg" alt="avatar myself">
-                        </div>
-    
-                        <div class="text-contacts">
-                            <h3>Michele</h3>
-                            <p>Tutto fatto</p>
-                            <span class="last-message">10/01/2020 16:15:22</span>
-                        </div>
-
-                    </div>
-
-                    <div class="contatto">
-
-                        <div class="avatar">
-                            <img class="icona-avatar" src="img/avatar_1.jpg" alt="avatar myself">
-                        </div>
-    
-                        <div class="text-contacts">
-                            <h3>Michele</h3>
-                            <p>Tutto fatto</p>
-                            <span class="last-message">10/01/2020 16:15:22</span>
-                        </div>
-
-                    </div>
-
-                </div>
+                </ul>
             
             </aside>
 
@@ -120,10 +92,12 @@
                 <div class="messaggi">
 
                     <div class="f-end">
+
                         <p>Hai portato a spasso il cane?
                             <span class="last-message">10/01/2020 16:15:22</span>
                             <i class="fa-solid fa-angle-down"></i>
                         </p> 
+
                     </div>
 
                     <div class="f-end">
