@@ -3,18 +3,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 #root {
     height: 100vh;
-    background: linear-gradient(180deg, #1d9688 18%, #dadbd4 0%);
+    background: linear-gradient(180deg, #1d9688 20%, #dadbd4 0%);
     padding-top: 2.5%;
 }
 
 #container {
-    width: 70%;
+    width: 80%;
     min-width: 600px;
     margin: 0 auto;
     height: 95%;
-    border: 1px solid black;
+    display: flex;
 }
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.icona-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.fa-solid {
+    color: #b1b1b1;
+    font-size: 1.1rem;
+}
+
+/* Regole Aside */
+aside {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-utente {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    padding: 10px 0;
+}
+
+.nome-utente div {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    padding-left: 10px;
+}
+
+.avatar span {
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.icone {
+    margin-right: 10px;
+}
+
+.icone i {
+    padding: 0 10px;
+}
+
+/* Regole Main */
+main {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    background-color: blue;
+}
+
