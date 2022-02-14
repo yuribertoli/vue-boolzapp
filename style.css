@@ -17,7 +17,6 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    height: 30px;
     background-color: #0A4C95;
 }
     /* Fine Scrollbar Edge/Chrome */
