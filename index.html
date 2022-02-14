@@ -59,8 +59,8 @@
     
                         <div class="text-contacts">
                             <h3>{{contact.name}}</h3>
-                            <p>Tutto fatto</p>
-                            <span class="last-message">10/01/2020 16:15:22</span>
+                            <p>{{contact.messages[contact.messages.length-1].text}}</p>
+                            <span class="last-message">{{contact.messages[contact.messages.length-1].date}}</span>
                         </div>
 
                     </li>

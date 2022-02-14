@@ -30,29 +30,6 @@ const app = new Vue ({
             },
 
             {
-                name: 'John',
-                avatar: '_5',
-                visible: true,
-                messages: [
-                    {
-                    date: '09/04/2021 15:40:54',
-                    text: 'Ci sei stasera?',
-                    status: 'sent'
-                    },
-                    {
-                    date: '09/04/2021 15:50:00',
-                    text: 'Mangiamo insieme?',
-                    status: 'sent'
-                    },
-                    {
-                    date: '09/04/2021 16:15:22',
-                    text: 'Volentieri',
-                    status: 'received'
-                    }
-                ],
-            },
-
-            {
                 name: 'Fabio',
                 avatar: '_2',
                 visible: true,
@@ -119,6 +96,6 @@ const app = new Vue ({
     },
 
     methods: {
-
+               
     }
 })
