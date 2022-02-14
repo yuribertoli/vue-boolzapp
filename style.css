@@ -141,6 +141,39 @@ aside {
     font-size: 1.2rem;
 }
 
+    /* Contatti */
+.contatto {
+    background-color: white;
+    display: flex;
+    padding: 10px 0;
+    width: 95%;
+    border: 1px solid #e9ebeb;
+}
+
+.text-contacts {
+    padding-left: 20px;
+    width: calc(100% - 60px);
+    position: relative;
+}
+
+.text-contacts h3 {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.text-contacts p {
+    color: #b6b9bb;
+    font-size: 0.8rem;
+    padding-top: 2px;
+}
+
+.text-contacts span {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    color: #b6b9bb;
+    font-size: 0.7rem;
+}
 /* Regole Main */
 main {
     display: inline-block;
