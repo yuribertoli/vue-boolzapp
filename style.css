@@ -1,5 +1,11 @@
+/* Regole Generali */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#root {
+    height: 100vh;
+    background: linear-gradient(180deg, #1d9688 18%, #dadbd4 0%);
 }
