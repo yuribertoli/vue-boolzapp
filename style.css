@@ -48,6 +48,7 @@ aside {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #fafafa;
 }
 
     /* Nome Utente */
@@ -114,6 +115,30 @@ aside {
 
 .notifications-text a {
     font-size: 0.75rem;
+}
+
+    /* Ricerca */
+.ricerca {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ricerca input {
+    border: none;
+    border-radius: 2px;
+    width: 95%;
+    height: 30px;
+    padding-left: 50px;
+}
+
+.ricerca i {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    font-size: 1.2rem;
 }
 
 /* Regole Main */
