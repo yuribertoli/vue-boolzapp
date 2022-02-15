@@ -119,8 +119,10 @@ const app = new Vue ({
                 //resetto il valore
                 this.input = "";
 
+                //rendo visibile il this dentro setTimeout
                 let that = this;
 
+                //Dopo 1 secondo creo un oggetto dentro messages per avere una risposta automatica all'utente
                 setTimeout(function() {
 
                     let risposta = {date: '10/01/2020 15:30:56', text: 'ok', status: 'received'};
