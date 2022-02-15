@@ -78,14 +78,18 @@
 
                 <div class="info">
 
-                    <div v-for="(contact, indice) in contacts" :class="indice == attivo? 'block' : 'none' " class="boh">
+                    <!-- Creo un div di servizio per ciclare gli avatar e dare il display none a tutti quelli che non hanno l'indice uguale alla variabile "attivo" -->
+                    <!-- Non avrei potuto direttamente sul div avatar perchè ha già un display flex -->
+                    <div v-for="(contact, indice) in contacts" :class="indice == attivo? 'block' : 'none' ">
+
                         <div class="avatar">
-                            <img class="icona-avatar" :src=" `img/avatar${contact.avatar}.jpg` " alt="avatar myself">
+                            <img class="icona-avatar" :src=" `img/avatar${contact.avatar}.jpg` " :alt=" 'avatar' + contact.name ">
                             <div class="contact-details">
                                 <h3>{{contact.name}}</h3>
                                 <span>Ultimo accesso oggi {{contact.messages[contact.messages.length - 1].date}}</span>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="icone">
