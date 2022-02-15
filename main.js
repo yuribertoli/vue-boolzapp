@@ -6,6 +6,8 @@ const app = new Vue ({
 
         attivo: 0,
 
+        input: "",
+
         contacts: [
 
             {
@@ -98,8 +100,25 @@ const app = new Vue ({
     },
 
     methods: {
+
+        //Aggiorno il valore di attivo al valore dell'indice corrente
         selectAvatar(index) {
             this.attivo = index;
-        }     
+        },
+        
+        //Aggiungo un oggetto all'array messagges dell'indice indicato da attivo
+        add() { 
+            if (this.input != "") { //evito di aggiungere valori vuoti
+
+                //creo una variabile dove inserisco un oggetto con frase i valori della variabile input, data e status (quindi anche classe, visto che hanno lo stesso nome)
+                let oggetto = {date: '10/01/2020 15:30:55', text: this.input, status: 'sent'}
+
+                //aggiungo all'array l'oggetto creato, tenendo conto dell'indice dell'avatar corrente
+                this.contacts[this.attivo].messages.push(oggetto);
+
+                //resetto il valore
+                this.input = "";
+            }       
+        },
     }
 });
