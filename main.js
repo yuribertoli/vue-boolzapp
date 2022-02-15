@@ -147,8 +147,19 @@ const app = new Vue ({
             }       
         },
 
+        //funzione per aprire il sottomenu di ogni "li" tag nei messaggi del main
         showSettings(indice) {
             this.contacts[this.attivo].messages[indice].setting = !this.contacts[this.attivo].messages[indice].setting;
+        },
+
+        showData(indice){
+            let pippo = this.contacts[this.attivo].messages[indice].date;
+            let frase = `Il messaggio è stato scritto il ${pippo}`;
+            return alert(frase);
+        },
+
+        deleteMessage(){
+
         }
     },
 });

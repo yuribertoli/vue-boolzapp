@@ -114,8 +114,8 @@
                         <!-- Rendo visibile tramite classi css solo i messaggi che hanno la variabile setting == true , da cambiare con il click sull'icona sopra -->
                         <div :class="contacts[attivo].messages[indice].setting == false? 'none' : 'opt' " >
                             <ul>
-                                <li>Info Messaggio</li>
-                                <li>Elimina Messaggio</li>
+                                <li @click="showData(indice)">Info Messaggio</li>
+                                <li @click="deleteMessage">Elimina Messaggio</li>
                             </ul>
                         </div> 
 
