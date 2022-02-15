@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="ricerca">
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input v-model="search" type="text" placeholder="Cerca o inizia una nuova chat">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 
@@ -54,7 +54,8 @@
                     <!-- Ciclo tutti gli elementi presenti in contacts -->
                     <!-- Al click assegno l'indice dell'elemento alla variabile "attivo" -->
                     <!-- Se l'indice dove clicco è uguale a quello della variabile "attivo" allora aggiungo la classe "active" -->
-                    <li @click="selectAvatar(indice)" :class="indice == attivo? 'active' : ''" class="contatto" v-for="(contact, indice) in contacts">
+                    <!-- Se il nome del contatto include i caratteri inseriti nella ricerca allora lo mostro -->
+                    <li @click="selectAvatar(indice)" :class="indice == attivo? 'active' : ''" class="contatto" v-for="(contact, indice) in contacts" v-if="contact.name.toLowerCase().includes(search.toLowerCase())">
 
                         <div class="avatar">            <!-- Concateno il contenuto delle variabili avatar con l'url di ogni immagine -->
                             <img class="icona-avatar" :src="'img/avatar' + contact.avatar + '.jpg' " :alt=" 'avatar' + contact.name">

@@ -8,6 +8,8 @@ const app = new Vue ({
 
         input: "",
 
+        search: "",
+
         contacts: [
 
             {
@@ -132,6 +134,6 @@ const app = new Vue ({
                 }, 1000);
 
             }       
-        },
-    }
+        }
+    },
 });
