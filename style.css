@@ -170,6 +170,10 @@ aside {
     border: 1px solid #e9ebeb;
 }
 
+.contatto:hover {
+    cursor: pointer;
+}
+
 .text-contacts {
     padding-left: 20px;
     width: calc(100% - 60px);
@@ -241,6 +245,9 @@ main {
     font-weight: 100;
 }
 
+.none {
+    display: none;
+}
     /* Messaggi */
 .messaggi {
     width: 98%;
