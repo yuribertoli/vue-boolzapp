@@ -124,7 +124,7 @@ const app = new Vue ({
             if (this.input != "") { //evito di aggiungere valori vuoti
 
                 //creo una variabile dove inserisco un oggetto con frase i valori della variabile input, data e status (quindi anche classe, visto che hanno lo stesso nome)
-                let oggetto = {date: '10/01/2020 15:30:55', text: this.input, status: 'sent'}
+                let oggetto = {setting: false, date: '10/01/2020 15:30:55', text: this.input, status: 'sent'}
 
                 //aggiungo all'array l'oggetto creato, tenendo conto dell'indice dell'avatar corrente
                 this.contacts[this.attivo].messages.push(oggetto);
@@ -138,7 +138,7 @@ const app = new Vue ({
                 //Dopo 1 secondo creo un oggetto dentro messages per avere una risposta automatica all'utente
                 setTimeout(function() {
 
-                    let risposta = {date: '10/01/2020 15:30:56', text: 'ok', status: 'received'};
+                    let risposta = {setting: false, date: '10/01/2020 15:30:56', text: 'ok', status: 'received'};
 
                     that.contacts[that.attivo].messages.push(risposta);
 
