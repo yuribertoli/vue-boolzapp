@@ -170,7 +170,7 @@ const app = new Vue ({
 
             this.contacts[this.attivo].messages.splice(indice, 1);
 
-            //Se elimino l'ultimo messaggio lascio una frase per non interferire con gli altri methods
+            //Se elimino l'ultimo messaggio lascio un oggetto per non interferire con gli altri methods
             if (this.contacts[this.attivo].messages.length == 0) {
 
                 let oggetto = {setting: false, date: '', text: "Chat vuota!", status: 'empty'};
