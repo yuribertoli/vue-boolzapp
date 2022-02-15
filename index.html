@@ -115,7 +115,7 @@
                         <div :class="contacts[attivo].messages[indice].setting == false? 'none' : 'opt' " >
                             <ul>
                                 <li @click="showData(indice)">Info Messaggio</li>
-                                <li @click="deleteMessage">Elimina Messaggio</li>
+                                <li @click="deleteMessage(indice)">Elimina Messaggio</li>
                             </ul>
                         </div> 
 

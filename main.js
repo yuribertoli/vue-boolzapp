@@ -152,14 +152,16 @@ const app = new Vue ({
             this.contacts[this.attivo].messages[indice].setting = !this.contacts[this.attivo].messages[indice].setting;
         },
 
+        //prendo il contenuto di data e lo aggiungo ad una frase che mostro in un alert
         showData(indice){
             let pippo = this.contacts[this.attivo].messages[indice].date;
             let frase = `Il messaggio è stato scritto il ${pippo}`;
             return alert(frase);
         },
 
-        deleteMessage(){
-
+        //elimino l'oggetto selezionato dentro l'array messages
+        deleteMessage(indice){
+            this.contacts[this.attivo].messages.splice(indice, 1);
         }
     },
 });
