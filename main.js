@@ -120,7 +120,13 @@ const app = new Vue ({
         },
         
         //Aggiungo un oggetto all'array messagges dell'indice indicato da attivo
-        add() { 
+        add() {
+
+            //Se rimane solo un oggetto vuoto (usato per il metodo deleteMessage), lo elimino prima di aggiungere altri oggetti
+            if (this.contacts[this.attivo].messages[0].date == "") {
+                this.contacts[this.attivo].messages.splice(0, 1);
+            }
+
             if (this.input != "") { //evito di aggiungere valori vuoti
 
                 //creo una variabile dove inserisco un oggetto con frase i valori della variabile input, data e status (quindi anche classe, visto che hanno lo stesso nome)
