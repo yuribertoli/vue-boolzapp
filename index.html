@@ -52,7 +52,9 @@
                 <ul class="contatti">
 
                     <!-- Ciclo tutti gli elementi presenti in contacts -->
-                    <li @click="selectAvatar" class="contatto" v-for="(contact, indice) in contacts">
+                    <!-- Al click assegno l'indice dell'elemento alla variabile "attivo" -->
+                    <!-- Se l'indice dove clicco è uguale a quello della variabile "attivo" allora aggiungo la classe "active" -->
+                    <li @click="selectAvatar(indice)" :class="indice == attivo? 'active' : ''" class="contatto" v-for="(contact, indice) in contacts">
 
                         <div class="avatar">            <!-- Concateno il contenuto delle variabili avatar con l'url di ogni immagine -->
                             <img class="icona-avatar" :src="'img/avatar' + contact.avatar + '.jpg' " :alt=" 'avatar' + contact.name">

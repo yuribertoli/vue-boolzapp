@@ -301,6 +301,15 @@ i.fa-angle-down {
     display: block;
 }
 
+.active {
+    background-color: rgb(238, 235, 235);
+    border-right: 1px solid black;
+}
+
+.active div span, .active div p {
+    color: rgb(156, 151, 151);
+}
+
     /* Invio */
 .invio {
     background-color: #f3eeea;

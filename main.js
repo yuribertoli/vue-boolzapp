@@ -98,8 +98,8 @@ const app = new Vue ({
     },
 
     methods: {
-        selectAvatar() {
-
+        selectAvatar(index) {
+            this.attivo = index;
         }     
     }
 });
