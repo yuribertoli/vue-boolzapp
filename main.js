@@ -124,7 +124,7 @@ const app = new Vue ({
             if (this.input != "") { //evito di aggiungere valori vuoti
 
                 //creo una variabile dove inserisco un oggetto con frase i valori della variabile input, data e status (quindi anche classe, visto che hanno lo stesso nome)
-                let oggetto = {setting: false, date: '10/01/2020 15:30:55', text: this.input, status: 'sent'}
+                let oggetto = {setting: false, date: '10/01/2020 15:30:55', text: this.input, status: 'sent'};
 
                 //aggiungo all'array l'oggetto creato, tenendo conto dell'indice dell'avatar corrente
                 this.contacts[this.attivo].messages.push(oggetto);
@@ -161,7 +161,15 @@ const app = new Vue ({
 
         //elimino l'oggetto selezionato dentro l'array messages
         deleteMessage(indice){
+
             this.contacts[this.attivo].messages.splice(indice, 1);
+
+            //Se elimino l'ultimo messaggio lascio una frase per non interferire con gli altri methods
+            if (this.contacts[this.attivo].messages.length == 0) {
+
+                let oggetto = {setting: false, date: '', text: "", status: 'empty'};
+                this.contacts[this.attivo].messages.push(oggetto);
+            }
         }
     },
 });

@@ -272,6 +272,10 @@ main {
     align-self: flex-start;
 }
 
+.empty {
+    align-self: center;
+}
+
 .messaggi div {
     padding: 0 10px;
     margin: 5px 0;
