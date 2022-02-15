@@ -118,6 +118,17 @@ const app = new Vue ({
 
                 //resetto il valore
                 this.input = "";
+
+                let that = this;
+
+                setTimeout(function() {
+
+                    let risposta = {date: '10/01/2020 15:30:56', text: 'ok', status: 'received'};
+
+                    that.contacts[that.attivo].messages.push(risposta);
+
+                }, 1000);
+
             }       
         },
     }
