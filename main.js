@@ -4,6 +4,8 @@ const app = new Vue ({
 
     data: {
 
+        attivo: 0,
+
         contacts: [
 
             {
@@ -96,6 +98,8 @@ const app = new Vue ({
     },
 
     methods: {
-               
+        selectAvatar() {
+
+        }     
     }
-})
+});

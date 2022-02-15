@@ -182,9 +182,12 @@ aside {
 }
 
 .text-contacts p {
+    display: inline-block;
     color: #b6b9bb;
     font-size: 0.8rem;
     padding-top: 2px;
+    max-width: 200px;
+    text-overflow: ellipsis;
 }
 
 .last-message {
@@ -262,20 +265,21 @@ main {
     margin: 5px 0;
 }
 
-.messaggi div p {
+.messaggi div {
     border-radius: 5px;
     padding: 15px;
     display: inline-block;
     min-width: 200px;
+}
+
+.sent {
+    background-color: #d5f9ba;
     position: relative;
 }
 
-.sent p {
-    background-color: #d5f9ba;
-}
-
-.received p {
+.received {
     background-color: white;
+    position: relative;
 }
 
 .messaggi span.last-message {
@@ -293,7 +297,7 @@ i.fa-angle-down {
     cursor: pointer;
 }
 
-.messaggi div p:hover i.fa-angle-down{
+.messaggi div:hover i.fa-angle-down{
     display: block;
 }
 
